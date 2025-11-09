@@ -1,11 +1,74 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 📝 Catatan Sederhana - Simple Notes Application
 
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+<a href="https://github.com/rafifpurnomo/website-catatan-sederhana-dev/actions"><img src="https://github.com/rafifpurnomo/website-catatan-sederhana-dev/workflows/PHPUnit%20Tests%20-%20Catatan%20Sederhana/badge.svg" alt="Tests Status"></a>
+<a href="https://github.com/rafifpurnomo/website-catatan-sederhana-dev"><img src="https://img.shields.io/badge/PHP-8.2%20%7C%208.3-blue" alt="PHP Version"></a>
+<a href="https://github.com/rafifpurnomo/website-catatan-sederhana-dev"><img src="https://img.shields.io/badge/Laravel-11.x-red" alt="Laravel Version"></a>
+<a href="https://github.com/rafifpurnomo/website-catatan-sederhana-dev/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-green" alt="License"></a>
 </p>
+
+## 👥 Tim Pengembang
+
+**Testing Team:**
+- Rafif Purnomo
+- Reihan Ramadhana
+- Zidan Syifa Fajar
+- Naufal Ammar
+- Irji Syahrul
+
+## 🚀 Tentang Aplikasi
+
+Catatan Sederhana adalah aplikasi web berbasis Laravel untuk mencatat dan mengelola catatan pribadi. Aplikasi ini dilengkapi dengan testing otomatis menggunakan PHPUnit dan CI/CD dengan GitHub Actions.
+
+### ✨ Fitur Utama
+- ✅ Membuat catatan baru
+- ✅ Membaca/melihat catatan
+- ✅ Mengupdate catatan
+- ✅ Menghapus catatan
+- ✅ Automated Testing dengan PHPUnit
+- ✅ CI/CD dengan GitHub Actions
+
+## 🧪 Testing
+
+Aplikasi ini menggunakan **PHPUnit** untuk automated testing dengan coverage minimum 80%.
+
+### Menjalankan Tests
+
+```bash
+# Semua tests
+php artisan test
+
+# Unit tests saja
+php artisan test --testsuite=Unit
+
+# Feature tests saja
+php artisan test --testsuite=Feature
+
+# Dengan coverage
+php artisan test --coverage --min=80
+```
+
+📖 **Dokumentasi lengkap testing**: Lihat [TESTING.md](TESTING.md)
+
+## 🔄 CI/CD Pipeline
+
+Setiap push atau pull request ke branch `main` atau `develop` akan otomatis menjalankan:
+- ✅ PHPUnit tests pada PHP 8.2 dan 8.3
+- ✅ Unit dan Feature tests
+- ✅ Code coverage analysis
+- ✅ Upload test artifacts
+
+## 🛠️ Teknologi yang Digunakan
+
+- **Framework**: Laravel 11.x
+- **PHP**: 8.2 | 8.3
+- **Database**: SQLite (testing), MySQL/PostgreSQL (production)
+- **Testing**: PHPUnit
+- **CI/CD**: GitHub Actions
+
+---
+
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 ## About Laravel
 
