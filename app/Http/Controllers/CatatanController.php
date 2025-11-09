@@ -67,4 +67,36 @@ class CatatanController extends Controller
         return redirect()->route('catatan.index')
             ->with('success', 'Catatan berhasil ditambahkan!');
     }
+
+      /**
+     * Menampilkan form untuk edit catatan
+     * Dibuat oleh: DANA
+     */
+    public function edit($id)
+    {
+        $catatan = Catatan::findOrFail($id);
+        return view('catatan.edit', compact('catatan'));
+    }
+
+    /**
+     * EDIT - Update catatan di database
+     * Dibuat oleh: DANA
+     */
+    public function update(Request $request, $id)
+    {
+        $request->validate([
+            'judul' => 'required|max:255',
+            'deskripsi' => 'required'
+        ]);
+
+        $catatan = Catatan::findOrFail($id);
+        $catatan->update([
+            'judul' => $request->judul,
+            'deskripsi' => $request->deskripsi
+        ]);
+
+        return redirect()->route('catatan.index')
+            ->with('success', 'Catatan berhasil diupdate!');
+    }
+
 }
